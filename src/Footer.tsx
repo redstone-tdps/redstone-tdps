@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Github } from 'lucide-react';
 import { siteConfig } from './config';
 

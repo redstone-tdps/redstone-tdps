@@ -1,5 +1,4 @@
-import React from 'react';
-import { Github, Download, Car, Zap, Radar, Radio, Image as ImageIcon, ChevronRight } from 'lucide-react';
+import { Github, Download, Car, Zap, Radar, Radio, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { siteConfig } from './config';
