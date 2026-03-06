@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" fill="url(#redstone-grad)" stroke="#ef4444" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M12 22V12M12 12L2 7M12 12L22 7" stroke="#ef4444" stroke-width="1.5" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="redstone-grad" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ef4444" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#7f1d1d" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+</svg>
