@@ -26,7 +26,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
-          className="mb-6 text-5xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-white to-zinc-500"
+          className="mb-6 text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-white to-zinc-500"
         >
           {siteConfig.teamName}
         </motion.h1>
@@ -44,11 +44,11 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24 w-full"
         >
           <Link
             to="/resources"
-            className="flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white transition-all bg-red-600 rounded-lg hover:bg-red-500 ring-1 ring-transparent hover:ring-red-400"
+            className="flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 text-sm font-semibold text-white transition-all bg-red-600 rounded-lg hover:bg-red-500 ring-1 ring-transparent hover:ring-red-400"
           >
             <Download size={18} />
             Course Resources
@@ -57,7 +57,7 @@ export default function Home() {
             href={siteConfig.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 text-sm font-semibold transition-all rounded-lg text-zinc-300 bg-zinc-900 hover:bg-zinc-800 hover:text-white ring-1 ring-zinc-800"
+            className="flex items-center justify-center w-full sm:w-auto gap-2 px-6 py-3 text-sm font-semibold transition-all rounded-lg text-zinc-300 bg-zinc-900 hover:bg-zinc-800 hover:text-white ring-1 ring-zinc-800"
           >
             <Github size={18} />
             GitHub Repository
@@ -104,8 +104,8 @@ export default function Home() {
             <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-red-500/10 text-red-500 mb-4">
               <Radio size={24} />
             </div>
-            <h3 className="text-xl font-semibold text-zinc-200 mb-2">LoRa Telemetry</h3>
-            <p className="text-zinc-400">Long-range transmission of vehicle status and detection data to base stations.</p>
+            <h3 className="text-xl font-semibold text-zinc-200 mb-2">LoRa Communication</h3>
+            <p className="text-zinc-400">Long-range transmission of vehicle status and timing information.</p>
           </motion.div>
         </div>
 
@@ -167,14 +167,14 @@ export default function Home() {
             {siteConfig.timeline.map((item, index) => {
               const isActive = item.status === 'active';
               return (
-                <div key={item.id} className="flex gap-4">
+                <div key={item.id} className="flex gap-3 sm:gap-4">
                   <div className="flex flex-col items-center">
                     {isActive ? (
-                      <div className="w-8 h-8 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center ring-1 ring-red-500/30">
+                      <div className="w-8 h-8 shrink-0 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center ring-1 ring-red-500/30">
                         <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
                       </div>
                     ) : (
-                      <div className="w-8 h-8 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-500">
+                      <div className="w-8 h-8 shrink-0 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-500">
                         <span className="text-sm">{index + 1}</span>
                       </div>
                     )}
@@ -182,10 +182,10 @@ export default function Home() {
                       <div className={`w-px h-full my-2 ${isActive ? 'bg-zinc-800' : 'bg-zinc-800/50'}`} />
                     )}
                   </div>
-                  <div className={`pb-8 ${!isActive && 'opacity-60'}`}>
-                    <h4 className={`text-lg font-semibold ${isActive ? 'text-zinc-200' : 'text-zinc-300'}`}>{item.title}</h4>
-                    <p className="text-sm text-zinc-500 mb-2">{item.date}</p>
-                    <p className={`text-zinc-400 ${isActive ? 'bg-zinc-900/50' : 'bg-zinc-900/30'} p-4 rounded-xl border ${isActive ? 'border-zinc-800/50' : 'border-zinc-800/30'}`}>
+                  <div className={`pb-8 ${!isActive && 'opacity-60'} flex-1 min-w-0`}>
+                    <h4 className={`text-base sm:text-lg font-semibold ${isActive ? 'text-zinc-200' : 'text-zinc-300'}`}>{item.title}</h4>
+                    <p className="text-xs sm:text-sm text-zinc-500 mb-2">{item.date}</p>
+                    <p className={`text-sm sm:text-base text-zinc-400 ${isActive ? 'bg-zinc-900/50' : 'bg-zinc-900/30'} p-3 sm:p-4 rounded-xl border ${isActive ? 'border-zinc-800/50' : 'border-zinc-800/30'}`}>
                       {item.description}
                     </p>
                   </div>

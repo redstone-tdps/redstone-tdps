@@ -34,15 +34,15 @@ const RedstoneLogo = () => (
 
 export default function Header() {
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 px-6 py-6 w-full">
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
+    <header className="absolute top-0 left-0 right-0 z-50 px-4 sm:px-6 py-4 sm:py-6 w-full">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
         <Link to="/" className="flex items-center gap-3 text-white group">
           <RedstoneLogo />
-          <span className="font-bold text-2xl tracking-tight text-zinc-100 group-hover:text-white transition-colors">
+          <span className="font-bold text-xl sm:text-2xl tracking-tight text-zinc-100 group-hover:text-white transition-colors">
             {siteConfig.teamName}
           </span>
         </Link>
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-4 sm:gap-6">
           <Link to="/" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Home</Link>
           <Link to="/resources" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Resources</Link>
         </nav>

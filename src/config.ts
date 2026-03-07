@@ -1,6 +1,6 @@
 export const siteConfig = {
   // General Site Info
-  teamName: "Team Redstone",
+  teamName: "Redstone",
   email: "contact@redstone-tdps.top",
   githubUrl: "https://github.com/redstone-tdps/redstone-tdps",
   description: "Building the future of autonomous vehicles. Our project is an intelligent 4-wheel car featuring line-following, obstacle detection, and LoRa communication.",
@@ -30,24 +30,31 @@ export const siteConfig = {
     {
       id: "timeline-1",
       title: "Phase 1: Component Selection",
-      date: "October 2025",
-      description: "Currently determining whether to use Raspberry Pi or microcontrollers for optimal LoRa and sensor processing power. Finalizing wheel types and motor drivers.",
+      date: "March 2026",
+      description: "Discuss the optimal components for the 4-wheel drive system.",
       status: "active" // "active" or "upcoming"
     },
     {
       id: "timeline-2",
       title: "Phase 2: Base Assembly & Movement",
       date: "Upcoming",
-      description: "Assemble the 4-wheel chassis and program basic directional steering and line-following PID control.",
+      description: "Assemble the 4-wheel chassis, design motor drivers and program basic directional steering.",
       status: "upcoming"
     },
     {
       id: "timeline-3",
-      title: "Phase 3: Telemetry & Obstacle Avoidance",
+      title: "Phase 3: Line Following & Obstacle Avoidance",
       date: "Upcoming",
-      description: "Integrate ultrasonic/IR sensors for left/right detection logic and configure the LoRa transceiver packet payload.",
+      description: "Integrate IR sensors and/or a camera for left/right detection logic and 24GHz radar for obstacle detection.",
       status: "upcoming"
-    }
+    },
+    {
+      id: "timeline-4",
+      title: "Phase 4: LoRa Communication & Final Testing",
+      date: "Upcoming",
+      description: "Integrate all subsystems and conduct comprehensive testing.",
+      status: "upcoming"
+    },
   ],
 
   // Resources Page: Downloadable Files grouped by category
@@ -93,18 +100,5 @@ export const siteConfig = {
         }
       ]
     },
-    {
-      id: "group-2",
-      name: "Hardware Specs",
-      files: [
-        {
-          id: "f6",
-          title: "Vehicle Frame Design Specs",
-          description: "Hardware & Parts List",
-          filename: "frame-specs.pdf",
-          url: "/downloads/frame-specs.pdf"
-        }
-      ]
-    }
   ]
 };
