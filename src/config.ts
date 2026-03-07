@@ -65,35 +65,35 @@ export const siteConfig = {
       files: [
         {
           id: "f1",
-          title: "L1a_Course-Information_2025-2026",
+          title: "Lecture-1a: Course Information",
           description: "General course information",
           filename: "L1a_Course-Information_2025-2026.pdf",
           url: "/downloads/L1a_Course-Information_2025-2026.pdf"
         },
         {
           id: "f2",
-          title: "L1b_Design-Tasks_An-Overview_2025-2026",
+          title: "Lecture-1b: Design Tasks",
           description: "Overview of the TDPS design tasks",
           filename: "L1b_Design-Tasks_An-Overview_2025-2026.pdf",
           url: "/downloads/L1b_Design-Tasks_An-Overview_2025-2026.pdf"
         },
         {
           id: "f3",
-          title: "L2_Teamwork_2024-2025",
+          title: "Lecture-2: Teamwork",
           description: "Guidelines and best practices for teamwork",
           filename: "L2_Teamwork_2024-2025.pdf",
           url: "/downloads/L2_Teamwork_2024-2025.pdf"
         },
         {
           id: "f4",
-          title: "L3a_LabNotebooks_2024-2025",
+          title: "Lecture-3a: Lab notebooks",
           description: "How to maintain proper lab notebooks",
           filename: "L3a_LabNotebooks_2024-2025.pdf",
           url: "/downloads/L3a_LabNotebooks_2024-2025.pdf"
         },
         {
           id: "f5",
-          title: "L3b_Software Construction_2024-2025",
+          title: "Lecture-3b: Software Construction and Testing",
           description: "Software Construction Methodologies",
           filename: "L3b_Software Construction_2024-2025.pdf",
           url: "/downloads/L3b_Software Construction_2024-2025.pdf"
