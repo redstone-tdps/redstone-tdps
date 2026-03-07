@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Download, FileText, FolderOpen, ChevronDown, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Download, FileText, FolderOpen, ChevronDown, ChevronRight, Eye } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { siteConfig } from './config';
 
@@ -81,14 +81,27 @@ export default function Resources() {
                         )}
                       </div>
                     </div>
-                    <a 
-                      href={file.url} 
-                      download={file.filename}
-                      className="flex items-center justify-center w-full sm:w-auto gap-2 px-4 py-2 text-sm font-semibold text-red-500 bg-red-500/10 rounded-lg hover:bg-red-500/20 transition-colors whitespace-nowrap shrink-0"
-                    >
-                      <Download size={18} />
-                      Download
-                    </a>
+                    <div className="flex flex-row w-full sm:w-auto gap-2 shrink-0">
+                      {file.filename?.toLowerCase().endsWith('.pdf') && (
+                        <a 
+                          href={file.url} 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-300 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors whitespace-nowrap"
+                        >
+                          <Eye size={18} />
+                          View
+                        </a>
+                      )}
+                      <a 
+                        href={file.url} 
+                        download={file.filename}
+                        className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-red-500 bg-red-500/10 rounded-lg hover:bg-red-500/20 transition-colors whitespace-nowrap"
+                      >
+                        <Download size={18} />
+                        Download
+                      </a>
+                    </div>
                   </motion.div>
                 ))}
               </div>
