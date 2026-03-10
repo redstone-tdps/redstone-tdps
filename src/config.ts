@@ -61,7 +61,7 @@ export const siteConfig = {
   resourceGroups: [
     {
       id: "group-1",
-      name: "Week 1 Slides",
+      name: "TDPS",
       files: [
         {
           id: "f1",
@@ -98,6 +98,40 @@ export const siteConfig = {
           filename: "L3b_Software Construction_2024-2025.pdf",
           url: "/downloads/L3b_Software Construction_2024-2025.pdf"
         }
+      ]
+    },
+    {
+      id: "group-2",
+      name: "Product Management",
+      files: [
+        {
+          id: "f6",
+          title: "Project Management Part1",
+          description: "",
+          filename: "pm1.pdf",
+          url: "/downloads/pm1.pdf"
+        },
+        {
+          id: "f7",
+          title: "Project Management Part2",
+          description: "",
+          filename: "pm2.pdf",
+          url: "/downloads/pm2.pdf"
+        },
+        {
+          id: "f8",
+          title: "Project Management Part3",
+          description: "",
+          filename: "pm3.pdf",
+          url: "/downloads/pm3.pdf"
+        },
+        {
+          id: "f9",
+          title: "Project Management Part4",
+          description: "",
+          filename: "pm4.pdf",
+          url: "/downloads/pm4.pdf"
+        },
       ]
     },
   ]
