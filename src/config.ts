@@ -39,7 +39,7 @@ export const siteConfig = {
       title: "Phase 2: Base Assembly & Movement",
       date: "Upcoming",
       description: "Assemble the 4-wheel chassis, design motor drivers and program basic directional steering.",
-      status: "upcoming"
+      status: "active"
     },
     {
       id: "timeline-3",
