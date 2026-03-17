@@ -37,7 +37,7 @@ export const siteConfig = {
     {
       id: "timeline-2",
       title: "Phase 2: Base Assembly & Movement",
-      date: "Upcoming",
+      date: "March 2026 - April 2026",
       description: "Assemble the 4-wheel chassis, design motor drivers and program basic directional steering.",
       status: "active"
     },
